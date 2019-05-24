@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-saga": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +30,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-dom": "^3.4.0",
+    "react-testing-library": "^7.0.1",
+    "redux-saga-test-plan": "^4.0.0-beta.3"
   }
 }
