@@ -1,4 +1,9 @@
 import { combineReducers } from 'redux';
-import { reducer as feature } from 'core/feature';
+import { connectRouter } from 'connected-react-router';
+import { reducer as featureReducer } from 'core/feature';
 
-export const reducers = combineReducers({ feature });
+
+export const createRootReducer = history => combineReducers({
+  router: connectRouter(history),
+  feature: featureReducer,
+});
