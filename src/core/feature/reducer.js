@@ -5,10 +5,9 @@ import { STORE_ACTION } from './actions';
 export const initialState = null;
 
 const reducerMap = {
-  // NOTE: Setting handler to null means returning the exact state.
-  // For more built-in handlers, visit redux-actions [API doc](redux-actions)
-  // TODO: link to redux-actions API doc
-  [STORE_ACTION]: null,
+  // NOTE: redux-actions default action reducer to indentity function.
+  // Fore more info, visit [API doc](https://redux-actions.js.org/api)
+  [STORE_ACTION]: undefined,
 };
 
 // FIXME
