@@ -36,3 +36,9 @@ yet another react boilerplate
 - **NEVER** export/import default
   - Enable `npm-intellisense` support.
   - Throw compile error if accidentally importing either wrong property or from the wrong file.
+
+
+## Todo
+- [ ] how to set source path with react-scripts v3
+- [ ] add redux devtool
+- [ ] resolve TODOs marked inside the codebase
