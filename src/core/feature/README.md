@@ -40,6 +40,9 @@ export {
 
 ### Testing
 - Use `expectSaga` for *declarative testing*, `testSaga` for *sequential testing*.
-- Return a single `expectSaga/testSaga` for each test.
-  - `expectSaga/testSaga` must be returned in order for its result to be recognized.
-  - Including multiple `expectSaga/testSaga` on the same test ignores every test, except the returned one.
+- Limit the usage of `testSaga`
+  - A slight restructuring of a saga can lead to test failure.
+  - **Testing that the code does what it should do, not what it is doing.**
+- Always return `expectSaga` or use `async/await`
+  - `expectSaga` returns a Promise. Without returning a promise, `jest` will complete before the promise resolves.
+- In addition, use `redux-saga-test-plan`'s effects like `provide`, `useReducer`, and `useState` for integration testing.
