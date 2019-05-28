@@ -57,5 +57,4 @@ import * as feature from 'path/to/feature'; // includes properties from both 'lo
 
 ## Todo
 - [ ] add redux devtool
-- [ ] stop vscode from auto-complete jest's `test`, `describe` & `expect`
 - [ ] research about Quokka
