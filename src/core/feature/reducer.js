@@ -1,7 +1,8 @@
 import { handleActions } from 'redux-actions';
 import { STORE_ACTION } from './actions';
 
-const initialState = {};
+
+export const initialState = null;
 
 const reducerMap = {
   // NOTE: Setting handler to null means returning the exact state.
@@ -10,4 +11,5 @@ const reducerMap = {
   [STORE_ACTION]: null,
 };
 
+// FIXME
 export const reducer = handleActions(reducerMap, initialState);
