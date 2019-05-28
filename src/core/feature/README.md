@@ -45,4 +45,4 @@ export {
   - **Testing that the code does what it should do, not what it is doing.**
 - Always return `expectSaga` or use `async/await`
   - `expectSaga` returns a Promise. Without returning a promise, `jest` will complete before the promise resolves.
-- In addition, use `redux-saga-test-plan`'s effects like `provide`, `useReducer`, and `useState` for integration testing.
+- In addition, use `redux-saga-test-plan`'s effects like `provide`, `withReducer`, `withState`, and `hasFinalState` for integration testing.
