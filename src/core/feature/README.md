@@ -12,7 +12,7 @@ export const SAGA_ACTION = `${FEATURE} SAGA_ACTION`;
 export const STORE_ACTION = `${FEATURE} STORE_ACTION`;
 
 const {
-  sagaAction: actForSaga
+  sagaAction: actForSaga,
   storeAction: actForStore,
 } = createActions(
   {
