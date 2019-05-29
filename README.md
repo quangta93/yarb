@@ -59,3 +59,4 @@ import * as feature from 'path/to/feature'; // includes properties from both 'lo
 ## Todo
 - [ ] Fill in Features/Purpose section
 - [ ] Why and How to use redux-devtools-extension in prod?
+- [ ] Saga for API service
