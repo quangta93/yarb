@@ -56,6 +56,10 @@ import { Component } from 'path/to/component';
 import * as feature from 'path/to/feature'; // includes properties from both 'local-file' and 'another-local-file'
 ```
 
+### Organizing Utility Functions
+- **Each util function should be on its own file.**
+- If there are multiple utils for a feature, group them into a folder.
+
 ## Todo
 - [ ] Fill in Features/Purpose section
 - [ ] Why and How to use redux-devtools-extension in prod?
